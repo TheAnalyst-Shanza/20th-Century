@@ -1,0 +1,41 @@
+source,target,weight
+China,Japan,3
+France,Germany,3
+France,United Kingdom,3
+Germany,Russia,2
+China,North Korea,2
+Italy,Japan,2
+India,Pakistan,2
+Germany,Italy,2
+Germany,Japan,2
+Pakistan,Russia,1
+Israel,North Korea,1
+Israel,Pakistan,1
+Australia,Canada,1
+Israel,Russia,1
+North Korea,Pakistan,1
+North Korea,Russia,1
+Israel,South Africa,1
+South Korea,United States,1
+Japan,United States,1
+India,Russia,1
+North Korea,Vietnam,1
+North Korea,South Korea,1
+North Korea,United States,1
+China,Vietnam,1
+France,Russia,1
+India,North Korea,1
+India,Israel,1
+France,Pakistan,1
+France,North Korea,1
+France,Israel,1
+France,India,1
+China,Russia,1
+China,Pakistan,1
+China,Israel,1
+China,India,1
+China,France,1
+India,Japan,1
+Japan,Russia,1
+Germany,United Kingdom,1
+Korea,Vietnam,1
