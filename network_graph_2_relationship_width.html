@@ -32,9 +32,9 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 100%;
-                 height: 750px;
-                 background-color: #ffffff;
+                 width: 900px;
+                 height: 800px;
+                 background-color: #222222;
                  border: 1px solid lightgray;
                  position: relative;
                  float: left;
@@ -42,6 +42,12 @@
 
              
 
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
              
 
              
@@ -57,6 +63,8 @@
         </div>
 
         
+        
+            <div id="config"></div>
         
 
         <script type="text/javascript">
@@ -88,8 +96,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "China", "label": "China", "shape": "dot"}, {"color": "#97c2fc", "id": "Japan", "label": "Japan", "shape": "dot"}, {"color": "#97c2fc", "id": "France", "label": "France", "shape": "dot"}, {"color": "#97c2fc", "id": "Germany", "label": "Germany", "shape": "dot"}, {"color": "#97c2fc", "id": "United Kingdom", "label": "United Kingdom", "shape": "dot"}, {"color": "#97c2fc", "id": "Russia", "label": "Russia", "shape": "dot"}, {"color": "#97c2fc", "id": "North Korea", "label": "North Korea", "shape": "dot"}, {"color": "#97c2fc", "id": "Italy", "label": "Italy", "shape": "dot"}, {"color": "#97c2fc", "id": "India", "label": "India", "shape": "dot"}, {"color": "#97c2fc", "id": "Pakistan", "label": "Pakistan", "shape": "dot"}, {"color": "#97c2fc", "id": "Israel", "label": "Israel", "shape": "dot"}, {"color": "#97c2fc", "id": "Australia", "label": "Australia", "shape": "dot"}, {"color": "#97c2fc", "id": "Canada", "label": "Canada", "shape": "dot"}, {"color": "#97c2fc", "id": "South Africa", "label": "South Africa", "shape": "dot"}, {"color": "#97c2fc", "id": "South Korea", "label": "South Korea", "shape": "dot"}, {"color": "#97c2fc", "id": "United States", "label": "United States", "shape": "dot"}, {"color": "#97c2fc", "id": "Vietnam", "label": "Vietnam", "shape": "dot"}, {"color": "#97c2fc", "id": "Korea", "label": "Korea", "shape": "dot"}]);
-                  edges = new vis.DataSet([{"from": "China", "to": "Japan", "value": 3}, {"from": "China", "to": "North Korea", "value": 2}, {"from": "China", "to": "Vietnam", "value": 1}, {"from": "China", "to": "Russia", "value": 1}, {"from": "China", "to": "Pakistan", "value": 1}, {"from": "China", "to": "Israel", "value": 1}, {"from": "China", "to": "India", "value": 1}, {"from": "China", "to": "France", "value": 1}, {"from": "Japan", "to": "Italy", "value": 2}, {"from": "Japan", "to": "Germany", "value": 2}, {"from": "Japan", "to": "United States", "value": 1}, {"from": "Japan", "to": "India", "value": 1}, {"from": "Japan", "to": "Russia", "value": 1}, {"from": "France", "to": "Germany", "value": 3}, {"from": "France", "to": "United Kingdom", "value": 3}, {"from": "France", "to": "Russia", "value": 1}, {"from": "France", "to": "Pakistan", "value": 1}, {"from": "France", "to": "North Korea", "value": 1}, {"from": "France", "to": "Israel", "value": 1}, {"from": "France", "to": "India", "value": 1}, {"from": "Germany", "to": "Russia", "value": 2}, {"from": "Germany", "to": "Italy", "value": 2}, {"from": "Germany", "to": "United Kingdom", "value": 1}, {"from": "Russia", "to": "Pakistan", "value": 1}, {"from": "Russia", "to": "Israel", "value": 1}, {"from": "Russia", "to": "North Korea", "value": 1}, {"from": "Russia", "to": "India", "value": 1}, {"from": "North Korea", "to": "Israel", "value": 1}, {"from": "North Korea", "to": "Pakistan", "value": 1}, {"from": "North Korea", "to": "Vietnam", "value": 1}, {"from": "North Korea", "to": "South Korea", "value": 1}, {"from": "North Korea", "to": "United States", "value": 1}, {"from": "North Korea", "to": "India", "value": 1}, {"from": "India", "to": "Pakistan", "value": 2}, {"from": "India", "to": "Israel", "value": 1}, {"from": "Pakistan", "to": "Israel", "value": 1}, {"from": "Israel", "to": "South Africa", "value": 1}, {"from": "Australia", "to": "Canada", "value": 1}, {"from": "South Korea", "to": "United States", "value": 1}, {"from": "Vietnam", "to": "Korea", "value": 1}]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "white"}, "id": "China", "label": "China", "shape": "dot", "title": "China (degree: 8)", "value": 8}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Japan", "label": "Japan", "shape": "dot", "title": "Japan (degree: 6)", "value": 6}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "France", "label": "France", "shape": "dot", "title": "France (degree: 8)", "value": 8}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Germany", "label": "Germany", "shape": "dot", "title": "Germany (degree: 5)", "value": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "United Kingdom", "label": "United Kingdom", "shape": "dot", "title": "United Kingdom (degree: 2)", "value": 2}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Russia", "label": "Russia", "shape": "dot", "title": "Russia (degree: 8)", "value": 8}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "North Korea", "label": "North Korea", "shape": "dot", "title": "North Korea (degree: 9)", "value": 9}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Italy", "label": "Italy", "shape": "dot", "title": "Italy (degree: 2)", "value": 2}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "India", "label": "India", "shape": "dot", "title": "India (degree: 7)", "value": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Pakistan", "label": "Pakistan", "shape": "dot", "title": "Pakistan (degree: 6)", "value": 6}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Israel", "label": "Israel", "shape": "dot", "title": "Israel (degree: 7)", "value": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Australia", "label": "Australia", "shape": "dot", "title": "Australia (degree: 1)", "value": 1}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Canada", "label": "Canada", "shape": "dot", "title": "Canada (degree: 1)", "value": 1}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "South Africa", "label": "South Africa", "shape": "dot", "title": "South Africa (degree: 1)", "value": 1}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "South Korea", "label": "South Korea", "shape": "dot", "title": "South Korea (degree: 2)", "value": 2}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "United States", "label": "United States", "shape": "dot", "title": "United States (degree: 3)", "value": 3}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Vietnam", "label": "Vietnam", "shape": "dot", "title": "Vietnam (degree: 3)", "value": 3}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "Korea", "label": "Korea", "shape": "dot", "title": "Korea (degree: 1)", "value": 1}]);
+                  edges = new vis.DataSet([{"from": "China", "title": "Weight: 3", "to": "Japan", "value": 3}, {"from": "China", "title": "Weight: 2", "to": "North Korea", "value": 2}, {"from": "China", "title": "Weight: 1", "to": "Vietnam", "value": 1}, {"from": "China", "title": "Weight: 1", "to": "Russia", "value": 1}, {"from": "China", "title": "Weight: 1", "to": "Pakistan", "value": 1}, {"from": "China", "title": "Weight: 1", "to": "Israel", "value": 1}, {"from": "China", "title": "Weight: 1", "to": "India", "value": 1}, {"from": "China", "title": "Weight: 1", "to": "France", "value": 1}, {"from": "Japan", "title": "Weight: 2", "to": "Italy", "value": 2}, {"from": "Japan", "title": "Weight: 2", "to": "Germany", "value": 2}, {"from": "Japan", "title": "Weight: 1", "to": "United States", "value": 1}, {"from": "Japan", "title": "Weight: 1", "to": "India", "value": 1}, {"from": "Japan", "title": "Weight: 1", "to": "Russia", "value": 1}, {"from": "France", "title": "Weight: 3", "to": "Germany", "value": 3}, {"from": "France", "title": "Weight: 3", "to": "United Kingdom", "value": 3}, {"from": "France", "title": "Weight: 1", "to": "Russia", "value": 1}, {"from": "France", "title": "Weight: 1", "to": "Pakistan", "value": 1}, {"from": "France", "title": "Weight: 1", "to": "North Korea", "value": 1}, {"from": "France", "title": "Weight: 1", "to": "Israel", "value": 1}, {"from": "France", "title": "Weight: 1", "to": "India", "value": 1}, {"from": "Germany", "title": "Weight: 2", "to": "Russia", "value": 2}, {"from": "Germany", "title": "Weight: 2", "to": "Italy", "value": 2}, {"from": "Germany", "title": "Weight: 1", "to": "United Kingdom", "value": 1}, {"from": "Russia", "title": "Weight: 1", "to": "Pakistan", "value": 1}, {"from": "Russia", "title": "Weight: 1", "to": "Israel", "value": 1}, {"from": "Russia", "title": "Weight: 1", "to": "North Korea", "value": 1}, {"from": "Russia", "title": "Weight: 1", "to": "India", "value": 1}, {"from": "North Korea", "title": "Weight: 1", "to": "Israel", "value": 1}, {"from": "North Korea", "title": "Weight: 1", "to": "Pakistan", "value": 1}, {"from": "North Korea", "title": "Weight: 1", "to": "Vietnam", "value": 1}, {"from": "North Korea", "title": "Weight: 1", "to": "South Korea", "value": 1}, {"from": "North Korea", "title": "Weight: 1", "to": "United States", "value": 1}, {"from": "North Korea", "title": "Weight: 1", "to": "India", "value": 1}, {"from": "India", "title": "Weight: 2", "to": "Pakistan", "value": 2}, {"from": "India", "title": "Weight: 1", "to": "Israel", "value": 1}, {"from": "Pakistan", "title": "Weight: 1", "to": "Israel", "value": 1}, {"from": "Israel", "title": "Weight: 1", "to": "South Africa", "value": 1}, {"from": "Australia", "title": "Weight: 1", "to": "Canada", "value": 1}, {"from": "South Korea", "title": "Weight: 1", "to": "United States", "value": 1}, {"from": "Vietnam", "title": "Weight: 1", "to": "Korea", "value": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
@@ -102,7 +110,12 @@
 
                   var options = {
     "configure": {
-        "enabled": false
+        "enabled": true,
+        "filter": [
+            "physics",
+            "nodes",
+            "edges"
+        ]
     },
     "edges": {
         "color": {
@@ -128,6 +141,14 @@
             "springLength": 250
         },
         "enabled": true,
+        "repulsion": {
+            "centralGravity": 0.2,
+            "damping": 0.09,
+            "nodeDistance": 100,
+            "springConstant": 0.05,
+            "springLength": 200
+        },
+        "solver": "repulsion",
         "stabilization": {
             "enabled": true,
             "fit": true,
@@ -141,6 +162,10 @@
                   
 
 
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
                   
 
                   network = new vis.Network(container, data, options);
